@@ -1,0 +1,19 @@
+{
+    "name": "ativa/siapxml",
+    "description": "Uma PHP biblioteca para geração XML no layout SIAP - TCE-AL",
+    "license": "MIT",
+    "keywords": [
+      "xml",
+      "siop",
+      "tce",
+      "tceal"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Attiva\\Siapxml\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">= 5.4"
+    }
+}
