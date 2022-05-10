@@ -18,7 +18,7 @@ abstract class Base
         $this->mes = $mes;
         $this->dados = $dados;
 
-        $this->xml = new \DOMDocument("1.0", "ISO-8859-15");
+        $this->xml = new \DOMDocument("1.0");
     }
 
     abstract public function processar();
