@@ -14,5 +14,5 @@ $dados = [
     ]
 ];
 
-$adicional = new Dependente('60', '2022', '01', $dados);
-$adicional->processar()->save('/../xml/Vida Funcional');
+$xml = new Dependente('60', '2022', '01', $dados);
+$xml->processar()->save('/../xml/Vida Funcional');

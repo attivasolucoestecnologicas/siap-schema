@@ -25,5 +25,5 @@ $dados = [
     ],
 ];
 
-$adicional = new Carreira('60', '2022', '01', $dados);
-$adicional->processar()->save('/../xml/Vida Funcional');
+$xml = new Carreira('60', '2022', '01', $dados);
+$xml->processar()->save('/../xml/Vida Funcional');
