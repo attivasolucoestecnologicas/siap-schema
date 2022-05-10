@@ -2,7 +2,7 @@
 
 require_once '../vendor/autoload.php';
 
-use Attiva\Siapxml\FolhaPagamento\Admissao;
+use Attiva\Siapxml\FolhaPagamento\AlteracaoJornadaDeTrabalho;
 
 
 $dados = [
@@ -14,13 +14,14 @@ $dados = [
         'data_ato' => '2021-05-08',
         'veiculo_publicacao' => '4',
         'data_inicio' => '2021-06-06',
-        'tipo' => '2',
-        'numero_edital' => '05455486389977026118581995468925',
-        'numero_inscricao' => '92713676795625210665089289080521',
-        'cod_cargo' => '145',
-        'cod_carreira' => '287',
-        'cod_orgao' => '9985',
-        'salario' => '3000.00',
+        'cargo' => '154',
+        'carreira' => '287',
+        'jornada_anterior' => '30',
+        'jornada' => '40',
+        'base_legal' => '',
+        'alteracao_salario' => '1',
+        'percentual' => '20.02',
+        'salario' => '1500.00',
     ],
     [
         'cpf' => '42857134037',
@@ -30,15 +31,16 @@ $dados = [
         'data_ato' => '2021-01-03',
         'veiculo_publicacao' => '1',
         'data_inicio' => '2021-02-03',
-        'tipo' => '6',
-        'numero_edital' => '05455486389977026118581995468925',
-        'numero_inscricao' => '92713676795625210665089289080521',
-        'cod_cargo' => '145',
-        'cod_carreira' => '287',
-        'cod_orgao' => '9985',
-        'salario' => '3000.00',
+        'cargo' => '154',
+        'carreira' => '287',
+        'jornada_anterior' => '30',
+        'jornada' => '40',
+//        'base_legal' => '',
+        'alteracao_salario' => '1',
+        'percentual' => '12.00',
+        'salario' => '600.00',
     ]
 ];
 
-$adicional = new Admissao('60', '2022', '01', $dados);
+$adicional = new AlteracaoJornadaDeTrabalho('60', '2022', '01', $dados);
 $adicional->processar()->save('/../xml/Vida Funcional');

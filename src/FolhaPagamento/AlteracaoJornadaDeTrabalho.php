@@ -4,7 +4,7 @@ namespace Attiva\Siapxml\FolhaPagamento;
 
 use Attiva\Siapxml\Base;
 
-class Admissao extends Base
+class AlteracaoJornadaDeTrabalho extends Base
 {
     public function processar()
     {
@@ -20,7 +20,7 @@ class Admissao extends Base
         $siap->appendChild($mes);
 
         foreach ($this->dados as $dado) {
-            $content = $this->xml->createElement('Admissao');
+            $content = $this->xml->createElement('AlteracaoJornadaDeTrabalho');
             $siap->appendChild($content);
 
             $cpf = $this->xml->createElement('CPF', @$dado['cpf']);
@@ -30,12 +30,13 @@ class Admissao extends Base
             $dt_ato = $this->xml->createElement('DataAto', @$dado['data_ato']);
             $v_publicacao = $this->xml->createElement('VeiculoPublicacao', @$dado['veiculo_publicacao']);
             $dt_inicio = $this->xml->createElement('DataInicio', @$dado['data_inicio']);
-            $tipo = $this->xml->createElement('Tipo', @$dado['tipo']);
-            $n_edital = $this->xml->createElement('NumeroEdital', @$dado['numero_edital']);
-            $n_inscricao = $this->xml->createElement('NumeroInscricao', @$dado['numero_inscricao']);
-            $cod_cargo = $this->xml->createElement('CodigoCargo', @$dado['cod_cargo']);
-            $cod_carreira = $this->xml->createElement('CodigoCarreira', @$dado['cod_carreira']);
-            $cod_orgao = $this->xml->createElement('CodigoOrgao', @$dado['cod_orgao']);
+            $cargo = $this->xml->createElement('Cargo', @$dado['cargo']);
+            $carreira = $this->xml->createElement('Carreira', @$dado['carreira']);
+            $jornada_anterior = $this->xml->createElement('JornadaAnterior', @$dado['jornada_anterior']);
+            $jornada = $this->xml->createElement('Jornada', @$dado['jornada']);
+            $base_legal = $this->xml->createElement('BaseLegal', @$dado['base_legal']);
+            $altera_salario = $this->xml->createElement('AlteraSalario', @$dado['alteracao_salario']);
+            $percentual = $this->xml->createElement('Percentual', @$dado['percentual']);
             $salario = $this->xml->createElement('Salario', @$dado['salario']);
 
             $content->appendChild($cpf);
@@ -45,12 +46,13 @@ class Admissao extends Base
             $content->appendChild($dt_ato);
             $content->appendChild($v_publicacao);
             $content->appendChild($dt_inicio);
-            $content->appendChild($tipo);
-            $content->appendChild($n_edital);
-            $content->appendChild($n_inscricao);
-            $content->appendChild($cod_cargo);
-            $content->appendChild($cod_carreira);
-            $content->appendChild($cod_orgao);
+            $content->appendChild($cargo);
+            $content->appendChild($carreira);
+            $content->appendChild($jornada_anterior);
+            $content->appendChild($jornada);
+            $content->appendChild($base_legal);
+            $content->appendChild($altera_salario);
+            $content->appendChild($percentual);
             $content->appendChild($salario);
         }
 

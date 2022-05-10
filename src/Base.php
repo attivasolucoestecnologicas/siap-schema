@@ -21,6 +21,18 @@ abstract class Base
         $this->xml = new \DOMDocument("1.0", "ISO-8859-15");
     }
 
+    abstract public function processar();
+
+    public function save($path = '/')
+    {
+        $path = __DIR__ . $path;
+        if (!is_dir($path)) {
+            mkdir($path, 0755, true);
+        }
+        $path = $path . '/' . $this->className() . '.xml';
+        $this->xml->save($path);
+    }
+
     protected function className()
     {
         return (new \ReflectionClass($this))->getShortName();

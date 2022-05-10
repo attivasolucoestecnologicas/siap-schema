@@ -1,6 +1,6 @@
 <?php
 
-require '../vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use Attiva\Siapxml\FolhaPagamento\Adicional;
 
@@ -33,4 +33,4 @@ $dados = [
 ];
 
 $adicional = new Adicional('60', '2022', '01', $dados);
-$adicional->processar('/../../xml/Vida Funcional/');
+$adicional->processar()->save('/../xml/Vida Funcional');
