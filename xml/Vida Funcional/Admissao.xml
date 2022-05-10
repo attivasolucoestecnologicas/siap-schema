@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<SIAP>
+    <Codigo>60</Codigo>
+    <Exercicio>2022</Exercicio>
+    <Mes>01</Mes>
+    <Admissao>
+        <CPF>21208138090</CPF>
+        <Matricula>jWBmuGXpYGuTmRqv</Matricula>
+        <Processo>06/2021</Processo>
+        <NumeroAto>25/2021</NumeroAto>
+        <DataAto>2021-05-08</DataAto>
+        <VeiculoPublicacao>4</VeiculoPublicacao>
+        <DataInicio>2021-06-06</DataInicio>
+        <Tipo>2</Tipo>
+        <NumeroEdital>05455486389977026118581995468925</NumeroEdital>
+        <NumeroInscricao>92713676795625210665089289080521</NumeroInscricao>
+        <CodigoCargo>145</CodigoCargo>
+        <CodigoCarreira>287</CodigoCarreira>
+        <CodigoOrgao>9985</CodigoOrgao>
+        <Salario>3000.00</Salario>
+    </Admissao>
+    <Admissao>
+        <CPF>42857134037</CPF>
+        <Matricula>qwertyuiopasdfgh</Matricula>
+        <Processo>01/2021</Processo>
+        <NumeroAto>30/2021</NumeroAto>
+        <DataAto>2021-01-03</DataAto>
+        <VeiculoPublicacao>1</VeiculoPublicacao>
+        <DataInicio>2021-02-03</DataInicio>
+        <Tipo>6</Tipo>
+        <NumeroEdital>05455486389977026118581995468925</NumeroEdital>
+        <NumeroInscricao>92713676795625210665089289080521</NumeroInscricao>
+        <CodigoCargo>145</CodigoCargo>
+        <CodigoCarreira>287</CodigoCarreira>
+        <CodigoOrgao>9985</CodigoOrgao>
+        <Salario>3000.00</Salario>
+    </Admissao>
+</SIAP>
