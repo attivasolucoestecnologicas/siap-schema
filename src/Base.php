@@ -10,7 +10,7 @@ abstract class Base
     protected $exercicio;
     protected $mes;
     protected $dados;
-    protected $elements;
+    protected $elements = [];
 
     public function __construct($codigo, $exercicio, $mes, array $dados)
     {
@@ -24,7 +24,35 @@ abstract class Base
         $this->checkAttributes();
     }
 
-    abstract public function processar();
+//    abstract public function processar();
+
+    public function processar()
+    {
+        $siap = $this->xml->createElement("SIAP");
+        $this->xml->appendChild($siap);
+
+        $codigo = $this->xml->createElement('Codigo', $this->codigo);
+        $exercicio = $this->xml->createElement('Exercicio', $this->exercicio);
+        $mes = $this->xml->createElement('Mes', $this->mes);
+
+        $siap->appendChild($codigo);
+        $siap->appendChild($exercicio);
+        $siap->appendChild($mes);
+
+        foreach ($this->dados as $dado) {
+            $content = $this->xml->createElement($this->className());
+            $siap->appendChild($content);
+
+            foreach ($this->elements as $attribute) {
+                $el = $this->xml->createElement($attribute, @$dado[$attribute]);
+                $content->appendChild($el);
+            }
+        }
+
+        $this->xml->appendChild($siap);
+
+        return $this;
+    }
 
     public function save($path = '/')
     {
