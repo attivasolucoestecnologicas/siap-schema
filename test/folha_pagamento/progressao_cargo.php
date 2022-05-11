@@ -7,12 +7,12 @@ use Attiva\Siapxml\FolhaPagamento\ProgressaoCargo;
 
 $dados = [
     [
-        'codigo' => '56',
-        'nome' => 'Especial A III',
-        'codigo_cargo' => '154',
-        'codigo_classe' => '567',
-        'codigo_nivel' => '001',
-        'valor_salario' => '3798.75',
+        'Codigo' => '56',
+        'Nome' => 'Especial A III',
+        'CodigoCargo' => '154',
+        'CodigoClasse' => '567',
+        'CodigoNivel' => '001',
+        'ValorSalario' => '3798.75',
     ]
 ];
 

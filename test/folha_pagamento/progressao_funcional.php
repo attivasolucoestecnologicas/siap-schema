@@ -7,16 +7,16 @@ use Attiva\Siapxml\FolhaPagamento\ProgressaoFuncional;
 
 $dados = [
     [
-        'cpf' => '21208138090',
-        'matricula' => 'jWBmuGXpYGuTmRqv',
-        'processo' => '06/2021',
-        'numero_ato' => '25/2021',
-        'data_ato' => '2021-05-08',
-        'veiculo_publicacao' => '4',
-        'classe_anterior' => '565',
-        'nivel_anterior' => '003',
-        'classe' => '566',
-        'nivel' => '002',
+        'CPF' => '21208138090',
+        'Matricula' => 'jWBmuGXpYGuTmRqv',
+        'Processo' => '06/2021',
+        'NumeroAto' => '25/2021',
+        'DataAto' => '2021-05-08',
+        'VeiculoPublicacao' => '4',
+        'ClasseAnterior' => '565',
+        'NivelAnterior' => '003',
+        'Classe' => '566',
+        'Nivel' => '002',
     ]
 ];
 

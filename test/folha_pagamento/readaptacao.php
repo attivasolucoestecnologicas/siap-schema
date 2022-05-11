@@ -7,15 +7,15 @@ use Attiva\Siapxml\FolhaPagamento\Readaptacao;
 
 $dados = [
     [
-        'cpf' => '21208138090',
-        'matricula' => 'jWBmuGXpYGuTmRqv',
-        'processo' => '06/2021',
-        'numero_ato' => '25/2021',
-        'data_ato' => '2021-05-08',
-        'veiculo_publicacao' => '4',
-        'data_inicio' => '2021-06-09',
-        'tipo' => '1',
-        'motivo' => 'Licenca medica de acidente de trabalho',
+        'CPF' => '21208138090',
+        'Matricula' => 'jWBmuGXpYGuTmRqv',
+        'Processo' => '06/2021',
+        'NumeroAto' => '25/2021',
+        'DataAto' => '2021-05-08',
+        'VeiculoPublicacao' => '4',
+        'DataInicio' => '2021-06-09',
+        'Tipo' => '1',
+        'Motivo' => 'Licenca medica de acidente de trabalho',
     ]
 ];
 

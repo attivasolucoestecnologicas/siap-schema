@@ -24,8 +24,6 @@ abstract class Base
         $this->checkAttributes();
     }
 
-//    abstract public function processar();
-
     public function processar()
     {
         $siap = $this->xml->createElement("SIAP");
@@ -72,7 +70,9 @@ abstract class Base
     private function checkAttributes()
     {
         foreach ($this->dados as $dado) {
-            $res = array_diff_assoc($this->elements, array_keys($dado));
+            $res1 = array_diff_assoc($this->elements, array_keys($dado));
+            $res2 = array_diff_assoc(array_keys($dado), $this->elements);
+            $res = array_merge($res1, $res2);
             if (!empty($res)) {
                 throw new \Exception("Existe algum atributo invalido.");
             }

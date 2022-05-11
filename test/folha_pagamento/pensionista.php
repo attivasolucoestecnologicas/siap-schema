@@ -7,22 +7,22 @@ use Attiva\Siapxml\FolhaPagamento\Pensionista;
 
 $dados = [
     [
-        'cpf' => '21208138090',
-        'matricula' => 'jWBmuGXpYGuTmRqv',
-        'processo' => '06/2021',
-        'numero_ato' => '25/2021',
-        'data_ato' => '2021-05-08',
-        'veiculo_publicacao' => '4',
-        'cpf_pensionista' => '21125771070',
-        'nome_pensionista' => 'Leonardo Alves',
-        'data_nascimento' => '1997-03-25',
-        'grau_parentesco' => '1',
-        'tipo_beneficio' => '2',
-        'data_inicio' => '2021-06-06',
-        'data_fim' => '2018-12-13',
-        'percentual' => '70.40',
-        'responsavel' => '1',
-        'revisao' => '2',
+        'CPF' => '21208138090',
+        'Matricula' => 'jWBmuGXpYGuTmRqv',
+        'Processo' => '06/2021',
+        'NumeroAto' => '25/2021',
+        'DataAto' => '2021-05-08',
+        'VeiculoPublicacao' => '4',
+        'CPFPensionista' => '21125771070',
+        'NomePensionista' => 'Leonardo Alves',
+        'DataNascimento' => '1997-03-25',
+        'GrauParentesco' => '1',
+        'TipoBeneficio' => '2',
+        'DataInicio' => '2021-06-06',
+        'DataFim' => '2018-12-13',
+        'Percentual' => '70.40',
+        'Responsavel' => '1',
+        'Revisao' => '2',
     ]
 ];
 

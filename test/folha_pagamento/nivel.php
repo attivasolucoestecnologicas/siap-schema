@@ -6,19 +6,19 @@ use Attiva\Siapxml\FolhaPagamento\Nivel;
 
 $dados = [
     [
-        'codigo' => '567',
-        'nome' => 'A',
-        'escolaridade_minima' => '5475',
+        'Codigo' => '567',
+        'Nome' => 'A',
+        'EscolaridadeMinima' => '5475',
     ],
     [
-        'codigo' => '566',
-        'nome' => 'B',
-        'escolaridade_minima' => '5475',
+        'Codigo' => '566',
+        'Nome' => 'B',
+        'EscolaridadeMinima' => '5475',
     ],
     [
-        'codigo' => '565',
-        'nome' => 'C',
-        'escolaridade_minima' => '1825',
+        'Codigo' => '565',
+        'Nome' => 'C',
+        'EscolaridadeMinima' => '1825',
     ]
 ];
 

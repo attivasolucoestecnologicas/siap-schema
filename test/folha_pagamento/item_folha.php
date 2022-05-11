@@ -7,20 +7,20 @@ use Attiva\Siapxml\FolhaPagamento\ItemFolha;
 
 $dados = [
     [
-        'cpf' => '21208138090',
-        'matricula' => 'mhtngrbhuvcxwedo',
-        'mes_competencia' => '11',
-        'ano' => '2022',
-        'cnpj_fonte_pagadora' => '74035267000150',
-        'natureza' => '1003',
-        'tipo' => '3',
-        'descricao' => 'Valor correspondente à hora extraordinária de trabalho, acrescido de percentual de no mínimo 50%',
-        'incide_contribuicao_rpps' => '4',
-        'incide_irrf' => '11',
-        'teto_remuneratorio' => '2',
-        'incide_contribuicao_rgps' => '00',
-        'incide_fgts' => '11',
-        'valor' => '3135.25',
+        'CPF' => '21208138090',
+        'Matricula' => 'mhtngrbhuvcxwedo',
+        'MesCompetencia' => '11',
+        'Ano' => '2022',
+        'CNPJFontePagadora' => '74035267000150',
+        'Natureza' => '1003',
+        'Tipo' => '3',
+        'Descricao' => 'Valor correspondente à hora extraordinária de trabalho, acrescido de percentual de no mínimo 50%',
+        'IncideContribuicaoRPPS' => '4',
+        'IncideIRRF' => '11',
+        'TetoRemuneratorio' => '2',
+        'IncideContribuicaoRGPS' => '00',
+        'IncideFGTS' => '11',
+        'Valor' => '3135.25',
     ]
 ];
 

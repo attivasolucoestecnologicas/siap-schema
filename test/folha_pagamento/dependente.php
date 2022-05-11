@@ -6,11 +6,11 @@ use Attiva\Siapxml\FolhaPagamento\Dependente;
 
 $dados = [
     [
-        'cpf' => '01185065016',
-        'cpf_dependente' => '42367818088',
-        'nome_dependente' => 'Anastacia Nantes',
-        'data_nascimento' => '2010-09-29',
-        'grau_parentesco' => '3',
+        'CPF' => '01185065016',
+        'CPFDependente' => '42367818088',
+        'NomeDependente' => 'Anastacia Nantes',
+        'DataNascimento' => '2010-09-29',
+        'GrauParentesco' => '3',
     ]
 ];
 

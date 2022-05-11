@@ -6,19 +6,19 @@ use Attiva\Siapxml\FolhaPagamento\Classe;
 
 $dados = [
     [
-        'codigo' => '567',
-        'nome' => 'Especial A',
-        'tempo_servico_minimo' => '5475',
+        'Codigo' => '567',
+        'Nome' => 'Especial A',
+        'TempoServicoMinimo' => '5475',
     ],
     [
-        'codigo' => '566',
-        'nome' => 'Especial B',
-        'tempo_servico_minimo' => '5475',
+        'Codigo' => '566',
+        'Nome' => 'Especial B',
+        'TempoServicoMinimo' => '5475',
     ],
     [
-        'codigo' => '565',
-        'nome' => 'Especial C',
-        'tempo_servico_minimo' => '1825',
+        'Codigo' => '565',
+        'Nome' => 'Especial C',
+        'TempoServicoMinimo' => '1825',
     ]
 ];
 
