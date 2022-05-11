@@ -20,6 +20,8 @@ abstract class Base
         $this->dados = $dados;
 
         $this->xml = new \DOMDocument("1.0", 'UTF-8');
+
+        $this->checkAttributes();
     }
 
     abstract public function processar();
@@ -37,5 +39,15 @@ abstract class Base
     protected function className()
     {
         return (new \ReflectionClass($this))->getShortName();
+    }
+
+    private function checkAttributes()
+    {
+        foreach ($this->dados as $dado) {
+            $res = array_diff_assoc($this->elements, array_keys($dado));
+            if (!empty($res)) {
+                throw new \Exception("Existe algum atributo invalido.");
+            }
+        }
     }
 }
