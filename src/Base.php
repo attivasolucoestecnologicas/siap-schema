@@ -10,6 +10,7 @@ abstract class Base
     protected $exercicio;
     protected $mes;
     protected $dados;
+    protected $elements;
 
     public function __construct($codigo, $exercicio, $mes, array $dados)
     {
