@@ -1,19 +1,29 @@
 {
-    "name": "ativa/siapxml",
-    "description": "Uma PHP biblioteca para geração XML no layout SIAP - TCE-AL",
-    "license": "MIT",
+    "name": "attivasolucoestecnologicas/siap-schema",
+    "description": "Biblioteca PHP para geração XML no layout SIAP - TCE-AL",
+    "license": "GPL-2.0",
     "keywords": [
       "xml",
       "siop",
       "tce",
       "tceal"
     ],
+    "authors": [
+        {
+          "name": "Paulo Soares",
+          "email": "soarescbm@gmail.com"
+        },
+        {
+          "name": "Walber Jefferson",
+          "email": "walberjefferson@gmail.com"
+        }
+      ],
     "autoload": {
         "psr-4": {
-            "Attiva\\Siapxml\\": "src/"
+            "Attiva\\SiapSchema\\": "src/"
         }
     },
     "require": {
-        "php": ">= 5.4"
+        "php": ">= 5.6"
     }
 }
