@@ -1,8 +1,8 @@
 <?php
 
-namespace Attiva\Siapxml\FolhaPagamento;
+namespace Attiva\SiapSchema\FolhaPagamento;
 
-use Attiva\Siapxml\Base;
+use Attiva\SiapSchema\Base;
 
 class ProgressaoFuncional extends Base
 {

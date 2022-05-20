@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use Attiva\Siapxml\FolhaPagamento\Orgao;
+use Attiva\SiapSchema\FolhaPagamento\Orgao;
 
 $dados = [
     [

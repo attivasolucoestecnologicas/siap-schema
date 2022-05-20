@@ -1,6 +1,6 @@
 <?php
 
-namespace Attiva\Siapxml;
+namespace Attiva\SiapSchema;
 
 
 abstract class Base
