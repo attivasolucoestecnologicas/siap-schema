@@ -52,14 +52,17 @@ abstract class Base
         return $this;
     }
 
-    public function save($path = '/')
+    public function save($path = '/tmp')
     {
-        $path = __DIR__ . $path;
         if (!is_dir($path)) {
-            mkdir($path, 0755, true);
+            mkdir($path, 0777, true);
         }
         $path = $path . '/' . $this->className() . '.xml';
-        $this->xml->save($path);
+        $result =  $this->xml->save($path);
+        if ($result !== false) {
+            return true;
+        }
+        return false;
     }
 
     protected function className()
