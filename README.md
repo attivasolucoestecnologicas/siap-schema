@@ -8,4 +8,4 @@ Layouts dos arquivos de remessa do SIAP – Sistema Integrado de Auditoria Publi
 
 ## Referência
 
-MANUAL DE REFERÊNCIA DOS LEIAUTES DE ENVIO DO SIAP 2ª Edição / 2022
+MANUAL DE REFERÊNCIA DOS LEIAUTES DE ENVIO DO SIAP 3ª Edição / 2025
